@@ -1,0 +1,63 @@
+{
+  "Java Center Align Method": {
+    "body": [
+      "public static String center(String text, int width) {",
+      "    if (text == null) text = \"\";",
+      "    if (text.length() >= width) return text;",
+      "",
+      "    int totalPadding = width - text.length();",
+      "    int leftPadding = totalPadding / 2;",
+      "    int rightPadding = totalPadding - leftPadding;",
+      "",
+      "    return \" \".repeat(leftPadding) + text + \" \".repeat(rightPadding);",
+      "}"
+    ],
+    "description": "Java method to center align a string within a fixed width",
+    "prefix": "center"
+  },
+  "Java Main Class": {
+    "body": [
+      "public class ${TM_FILENAME_BASE} {",
+      "    public static void main(String[] args) {",
+      "",
+      "    }",
+      "}"
+    ],
+    "description": "Java main class with filename-based class name",
+    "prefix": "main"
+  },
+  "Java Scanner Object": {
+    "body": [
+      "import java.util.Scanner;",
+      "public class ${TM_FILENAME_BASE} {",
+      "    public static void main(String[] args) {",
+      "        Scanner in = new Scanner(System.in);",
+      "",
+      "        in.close();",
+      "    }",
+      "}"
+    ],
+    "description": "Java main class with scanner object",
+    "prefix": "java"
+  },
+  "Java Validate Method": {
+    "body": [
+      "public static int validateIntInput(Scanner in, int min, int max) {",
+      "  while (true) {",
+      "      try {",
+      "          int response = in.nextInt();",
+      "          if (response >= min && response <= max) {",
+      "              return response;",
+      "          }",
+      "          System.out.print(\"Invalid Input! Please enter from above options: \");",
+      "      } catch (InputMismatchException e) {",
+      "          System.out.println(\"Invalid Input! Please enter an integer!\");",
+      "          in.nextLine();",
+      "      }",
+      "  }",
+      "}"
+    ],
+    "description": "Java validate method to validate int input",
+    "prefix": "validate"
+  }
+}
