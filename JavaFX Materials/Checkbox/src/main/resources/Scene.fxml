@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" prefHeight="340.0" prefWidth="216.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <CheckBox fx:id="myCheckBox" layoutX="44.0" layoutY="289.0" mnemonicParsing="false" onAction="#change" prefHeight="31.0" prefWidth="129.0" text="ON/OFF">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="myLabel" layoutX="81.0" layoutY="211.0" text="OFF">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="myImageView" fitHeight="159.0" fitWidth="149.0" layoutX="56.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bulbOff.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
